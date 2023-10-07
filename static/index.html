@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/libs/tween.umd.js"></script>
+    <script src="/three145.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js"></script>
+</head>
+
+<body>
+
+    <div id="root">
+        <div id="timer"></div>
+        <dialog id="nameInput" open
+            style="display: flex; justify-content:center; flex-direction:column; align-items:center; gap: 15px;">
+            <input type="text" name="userName" id="userName">
+            <div class="bt" id="submit" style="border: 1px solid black">enter</div>
+        </dialog>
+        <dialog id="await" style="height: 100%; width:100%; display:none; background-color:rgba(191, 201, 56, 0.753)"
+            open>Czekaj
+            na 2 gracza</dialog>
+    </div>
+    <script>
+        const client = io();
+    </script>
+    <script src="/js/Item.js"></script>
+    <script src="/js/Pionek.js"></script>
+    <script src="/js/Game.js"></script>
+    <script src="/js/Ui.js"></script>
+    <script src="/js/Net.js"></script>
+    <script src="/js/Main.js"></script>
+
+</body>
+
+</html>
